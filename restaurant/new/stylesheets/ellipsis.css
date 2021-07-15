@@ -1,0 +1,715 @@
+/* line 9, ../sass/ellipsis.scss */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  -moz-binding: url('/stylesheets/xml/ellipsis.xml#ellipsis');
+}
+
+/* line 12, ../sass/ellipsis.scss */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* line 21, ../sass/ellipsis.scss */
+.no-js #loader-wrapper {
+  display: none;
+}
+
+/* line 25, ../sass/ellipsis.scss */
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #16a085;
+  -webkit-animation: spin 1.7s linear infinite;
+  animation: spin 1.7s linear infinite;
+  z-index: 11;
+}
+
+/* line 40, ../sass/ellipsis.scss */
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin-reverse .6s linear infinite;
+  animation: spin-reverse .6s linear infinite;
+}
+
+/* line 53, ../sass/ellipsis.scss */
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+@keyframes spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+/* line 103, ../sass/ellipsis.scss */
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222;
+  z-index: 10;
+}
+
+/* line 112, ../sass/ellipsis.scss */
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+/* line 116, ../sass/ellipsis.scss */
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+/* Loaded styles */
+/* line 121, ../sass/ellipsis.scss */
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* line 128, ../sass/ellipsis.scss */
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* line 135, ../sass/ellipsis.scss */
+.loaded #loader {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 141, ../sass/ellipsis.scss */
+.loaded #loader-wrapper {
+  visibility: hidden;
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: all 0.3s 1s ease-out;
+  transition: all 0.3s 1s ease-out;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src: url("../fonts/roboto-condensed.woff2") format("woff2");
+}
+/* line 166, ../sass/ellipsis.scss */
+.copyright_text_area li a {
+  cursor: pointer;
+  color: #747;
+  text-decoration: none;
+}
+/* line 170, ../sass/ellipsis.scss */
+.copyright_text_area li a:hover {
+  color: #333;
+}
+
+/* line 176, ../sass/ellipsis.scss */
+body {
+  font-family: 'Merriweather', serif;
+}
+
+/* line 178, ../sass/ellipsis.scss */
+.navbar-inverse .navbar-nav > li > a:focus {
+  outline: none;
+  outline-offset: none;
+  color: #333;
+}
+
+/* line 183, ../sass/ellipsis.scss */
+.divclass_enterprise {
+  background: url(../img/bannerbg.jpg) no-repeat;
+  position: relative;
+}
+/* line 191, ../sass/ellipsis.scss */
+.divclass_enterprise .navbar-inverse {
+  background-color: transparent;
+  border: none;
+}
+/* line 199, ../sass/ellipsis.scss */
+.divclass_enterprise .navbar-inverse .navbar-nav a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  color: #777;
+}
+/* line 206, ../sass/ellipsis.scss */
+.divclass_enterprise .navbar-inverse .navbar-nav a:hover {
+  color: #333;
+}
+/* line 210, ../sass/ellipsis.scss */
+.divclass_enterprise .navbar-inverse ul {
+  padding-top: 20px;
+}
+
+/* line 217, ../sass/ellipsis.scss */
+.head_text {
+  padding: 200px 0px;
+  text-align: center;
+}
+
+/* line 221, ../sass/ellipsis.scss */
+.head_text2 {
+  text-align: center;
+}
+/* line 223, ../sass/ellipsis.scss */
+.head_text2 h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* line 229, ../sass/ellipsis.scss */
+.menu_list_head {
+  margin-top: 50px;
+}
+/* line 231, ../sass/ellipsis.scss */
+.menu_list_head ul {
+  text-align: center;
+}
+/* line 233, ../sass/ellipsis.scss */
+.menu_list_head ul li {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: 1px solid transparent;
+}
+/* line 240, ../sass/ellipsis.scss */
+.menu_list_head ul li a {
+  color: #333;
+  font-weight: bold;
+}
+/* line 244, ../sass/ellipsis.scss */
+.menu_list_head ul li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 249, ../sass/ellipsis.scss */
+.menu_list_head ul li:hover {
+  border: 1px solid #333;
+}
+
+/* line 255, ../sass/ellipsis.scss */
+.menus_list {
+  text-decoration: none;
+}
+/* line 257, ../sass/ellipsis.scss */
+.menus_list ul {
+  padding: 0;
+  list-style-type: none;
+}
+/* line 260, ../sass/ellipsis.scss */
+.menus_list ul li {
+  margin-bottom: 35px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #767687;
+}
+/* line 265, ../sass/ellipsis.scss */
+.menus_list ul li a {
+  text-decoration: none;
+  color: #767676;
+}
+/* line 269, ../sass/ellipsis.scss */
+.menus_list ul li a:hover {
+  text-decoration: none;
+  color: #767676;
+}
+/* line 276, ../sass/ellipsis.scss */
+.menus_list span {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 300;
+  display: block;
+  color: #767676;
+}
+
+/* line 284, ../sass/ellipsis.scss */
+.separetor {
+  background: url(../img/spr.png) no-repeat center center;
+  overflow: hidden;
+  padding: 20px 0px 30px 0px;
+}
+
+/* line 289, ../sass/ellipsis.scss */
+.navbar-inverse .navbar-toggle {
+  background-color: #333;
+}
+
+/* line 292, ../sass/ellipsis.scss */
+.divclass_enterprise li.active a,
+.divclass_enterprise li.active a:hover {
+  border: 1px solid #333;
+  color: #333 !important;
+  background-color: transparent !important;
+  font-weight: bold;
+}
+
+/* line 299, ../sass/ellipsis.scss */
+.foot_sec {
+  background: url(../img/footerbg.jpg) no-repeat center top;
+  background-size: auto auto;
+  background-size: cover;
+  padding-top: 80px;
+  background-position: right;
+}
+
+/* line 307, ../sass/ellipsis.scss */
+.food_menu img {
+  padding: 0;
+}
+
+/* line 311, ../sass/ellipsis.scss */
+.affix {
+  width: 100%;
+  top: 0;
+  transition: all .5s ease-in-out;
+  position: fixed;
+  padding: 15px !important;
+  background-color: #fff !important;
+  color: #3b3b3b;
+  z-index: 2222;
+}
+/* line 321, ../sass/ellipsis.scss */
+.affix ul {
+  padding-top: 0px !important;
+}
+
+/* line 327, ../sass/ellipsis.scss */
+.soc_me ul {
+  margin: 50px;
+}
+/* line 330, ../sass/ellipsis.scss */
+.soc_me ul li {
+  float: left;
+  list-style: none;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid #666666;
+}
+/* line 338, ../sass/ellipsis.scss */
+.soc_me ul li a {
+  color: #666666;
+  width: 20px;
+  font-size: 20px;
+}
+/* line 345, ../sass/ellipsis.scss */
+.soc_me ul li .fa {
+  color: #333;
+  padding-left: 3px;
+}
+
+/* line 353, ../sass/ellipsis.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+/* line 366, ../sass/ellipsis.scss */
+.overlay_separetor {
+  border-bottom: 2px solid #666;
+  padding-bottom: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 372, ../sass/ellipsis.scss */
+.cur_img:hover .overlay {
+  opacity: 1;
+}
+
+/* line 378, ../sass/ellipsis.scss */
+.padding_0 {
+  padding: 0;
+}
+
+/* line 381, ../sass/ellipsis.scss */
+.sec_bak {
+  background-color: #DDDDDD;
+}
+
+/* line 385, ../sass/ellipsis.scss */
+.abt_us h1 {
+  color: #767676;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+}
+/* line 391, ../sass/ellipsis.scss */
+.abt_us h2 {
+  color: #767676;
+  line-height: 1.6;
+  text-align: center;
+  font-weight: 300;
+  font-size: 32px;
+}
+
+/* line 400, ../sass/ellipsis.scss */
+.cnt_sec .btn {
+  border: 1px solid #3c3c3c;
+  display: inline-block;
+  min-width: 100px;
+  padding: .9em;
+  height: 50px;
+  text-align: center;
+  color: #3c3c3c;
+  font-style: normal;
+  letter-spacing: 1px;
+  margin: 0;
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 0;
+  margin-top: 30px;
+}
+/* line 418, ../sass/ellipsis.scss */
+.cnt_sec .btn:hover {
+  background-color: transparent;
+  color: #000;
+  text-decoration: none;
+}
+/* line 425, ../sass/ellipsis.scss */
+.cnt_sec h1 {
+  font-size: 40px;
+  color: #767676;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 432, ../sass/ellipsis.scss */
+.cnt_sec .cnt_sec_text h3 {
+  text-transform: uppercase;
+  padding: 20px 0px;
+  color: #767676;
+}
+
+/* line 440, ../sass/ellipsis.scss */
+.form-group {
+  margin-left: -20px;
+}
+
+/* line 443, ../sass/ellipsis.scss */
+.form-control {
+  border: 0px solid transparent;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  font-size: 16px;
+  height: 45px;
+  border-bottom: 1px solid #ddd;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0;
+  -webkit-box-shadow: 0;
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.075);
+}
+
+/* line 457, ../sass/ellipsis.scss */
+.form-control:focus {
+  border-color: #f9ce12;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* line 463, ../sass/ellipsis.scss */
+textarea.form-control {
+  height: auto;
+}
+
+/* line 467, ../sass/ellipsis.scss */
+.copyright_text_area {
+  display: block;
+  padding: 40px 0px 20px 0px;
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  margin-top: 60px;
+}
+/* line 475, ../sass/ellipsis.scss */
+.copyright_text_area p {
+  margin: 50px !important;
+}
+
+/* line 481, ../sass/ellipsis.scss */
+.text {
+  color: #333;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+/* line 491, ../sass/ellipsis.scss */
+.text p {
+  font-size: 15px;
+  padding: 10px 0px;
+}
+
+/* line 496, ../sass/ellipsis.scss */
+.mar_bot_20 {
+  margin-bottom: 20px;
+}
+
+/* line 499, ../sass/ellipsis.scss */
+.bakcol {
+  background-color: #F3C30F;
+}
+
+/* line 502, ../sass/ellipsis.scss */
+.section-padding {
+  padding: 70px 0px;
+}
+
+/* line 506, ../sass/ellipsis.scss */
+.head_sec_1 img {
+  display: flex;
+  margin: 0px auto;
+}
+/* line 510, ../sass/ellipsis.scss */
+.head_sec_1 h3 {
+  font-weight: bold;
+}
+
+/* line 518, ../sass/ellipsis.scss */
+.scrolldow::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+}
+
+/* line 531, ../sass/ellipsis.scss */
+.demo a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+/* line 545, ../sass/ellipsis.scss */
+.demo a:hover {
+  opacity: .5;
+}
+
+/* line 553, ../sass/ellipsis.scss */
+#section07 a {
+  padding-top: 80px;
+}
+
+/* line 557, ../sass/ellipsis.scss */
+#section07 a span {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #333;
+  border-bottom: 1px solid #333;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+
+/* line 572, ../sass/ellipsis.scss */
+#section07 a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+/* line 576, ../sass/ellipsis.scss */
+#section07 a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: .15s;
+  animation-delay: .15s;
+}
+
+/* line 581, ../sass/ellipsis.scss */
+#section07 a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
+}
+
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* line 609, ../sass/ellipsis.scss */
+  .text p {
+    font-size: 12px;
+  }
+
+  /* line 612, ../sass/ellipsis.scss */
+  .divclass_enterprise {
+    background-position: center;
+  }
+
+  /* line 616, ../sass/ellipsis.scss */
+  #section07 a span {
+    margin-top: 70px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* line 621, ../sass/ellipsis.scss */
+  .head_text {
+    padding: 270px 0px;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 627, ../sass/ellipsis.scss */
+  .divclass_enterprise {
+    background-position: top;
+  }
+
+  /* line 630, ../sass/ellipsis.scss */
+  .head_text {
+    padding: 300px 0px;
+  }
+  /* line 632, ../sass/ellipsis.scss */
+  .head_text h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape) {
+  /* line 638, ../sass/ellipsis.scss */
+  .divclass_enterprise {
+    background-position: center;
+  }
+
+  /* line 641, ../sass/ellipsis.scss */
+  .head_text {
+    padding: 200px 0px;
+  }
+  /* line 643, ../sass/ellipsis.scss */
+  .head_text h1 {
+    font-size: 32px;
+  }
+
+  /* line 647, ../sass/ellipsis.scss */
+  .affix {
+    padding-top: 25px !important;
+    padding-bottom: 10px !important;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 654, ../sass/ellipsis.scss */
+  .head_text {
+    padding: 80px 0px;
+  }
+  /* line 656, ../sass/ellipsis.scss */
+  .head_text h1 {
+    font-size: 32px;
+  }
+}

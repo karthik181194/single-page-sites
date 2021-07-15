@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/new1.css",
+	"sources": [
+		"../scss/new1.scss"
+	],
+	"sourcesContent": [
+		".head_img img{\r\n  width: 100%;\r\n}\r\n.nav_new .navbar-brand {\r\n  color: #333;\r\n font-weight: 700;\r\n  \r\n}\r\n\r\n.nav_new .navbar-inverse {\r\n  background-color: #fff;\r\n  border-color: #fff;\r\n}\r\n\r\n.head_img img {\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n\r\n// @font-face{\r\n//   font-family: 'Raleway';\r\n//   font-style:normal;\r\n//   font-weight: 300;\r\n//   src:local('Raleway Light'),local('Raleway-Light'),url(../fonts/raleway-light.woff2) format('woff2');\r\n// }\r\n@font-face {\r\n    font-family: 'Raleway';\r\n    font-style: normal;\r\n    font-weight: 700;\r\n    src: local('Raleway Bold'), local('Raleway-Bold'), url(../fonts/raleway-bold.woff2) format('woff2');\r\n\r\n}\r\n\r\n\r\n$font-new:raleway, sans-serif;\r\nbody{\r\n  font-family: 'Raleway';\r\n font-weight: 400;\r\n}\r\n@import url('../css/raleway-regular.css');\r\n\r\n.nav_new .navbar-nav .active a,\r\n.nav_new .navbar-nav .active a:focus,\r\n.nav_new .navbar-nav .active a:hover {\r\n  color: #00B906;\r\n  background-color: transparent;\r\n}\r\n\r\n.nav_new .navbar-nav li a {\r\n  color: #333;\r\n  font-size: 16px;\r\nfont-family: 'Raleway';\r\n  font-weight: 400;\r\n}\r\n\r\n.nav_new .navbar-nav li a:hover {\r\n  color: #00B906;\r\n}\r\n.nav_new .navbar-brand:hover{\r\n color: #00B906;\r\n}\r\n\r\n\r\n"
+	],
+	"mappings": "AAuCA,OAAO,CAAC,iCAAI;;AAvCZ,AAAU,SAAD,CAAC,GAAG,CAAA;EACX,KAAK,EAAE,IAAK;CACb;;;AACD,AAAS,QAAD,CAAC,aAAa,CAAC;EACrB,KAAK,EAAE,IAAK;EACb,WAAW,EAAE,GAAI;CAEjB;;;AAED,AAAS,QAAD,CAAC,eAAe,CAAC;EACvB,gBAAgB,EAAE,IAAK;EACvB,YAAY,EAAE,IAAK;CACpB;;;AAED,AAAU,SAAD,CAAC,GAAG,CAAC;EACZ,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK;CACd;;AAQD,UAAU;EACN,WAAW,EAAE,SAAU;EACvB,UAAU,EAAE,MAAO;EACnB,WAAW,EAAE,GAAI;EACjB,GAAG,EAAE,qBAAK,EAAkB,qBAAK,EAAiD,gCAAC,CAAC,eAAM;;;;AAM9F,AAAA,IAAI,CAAA;EACF,WAAW,EAAE,SAAU;EACxB,WAAW,EAAE,GAAI;CACjB;;;AAGD,AAA6B,QAArB,CAAC,WAAW,CAAC,OAAO,CAAC,CAAC;AAC9B,AAA8B,QAAtB,CAAC,WAAW,CAAC,OAAO,CAAC,CAAC,AAAA,MAAM;AACpC,AAA8B,QAAtB,CAAC,WAAW,CAAC,OAAO,CAAC,CAAC,AAAA,MAAM,CAAC;EACnC,KAAK,EAAE,OAAQ;EACf,gBAAgB,EAAE,WAAY;CAC/B;;;AAED,AAAwB,QAAhB,CAAC,WAAW,CAAC,EAAE,CAAC,CAAC,CAAC;EACxB,KAAK,EAAE,IAAK;EACZ,SAAS,EAAE,IAAK;EAClB,WAAW,EAAE,SAAU;EACrB,WAAW,EAAE,GAAI;CAClB;;;AAED,AAAyB,QAAjB,CAAC,WAAW,CAAC,EAAE,CAAC,CAAC,AAAA,MAAM,CAAC;EAC9B,KAAK,EAAE,OAAQ;CAChB;;;AACD,AAAsB,QAAd,CAAC,aAAa,AAAA,MAAM,CAAA;EAC3B,KAAK,EAAE,OAAQ;CACf",
+	"names": []
+}

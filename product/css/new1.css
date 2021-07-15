@@ -1,0 +1,64 @@
+@import url("../css/raleway-regular.css");
+/* line 1, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.head_img img {
+  width: 100%;
+}
+
+/* line 4, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.nav_new .navbar-brand {
+  color: #333;
+  font-weight: 700;
+}
+
+/* line 10, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.nav_new .navbar-inverse {
+  background-color: #fff;
+  border-color: #fff;
+}
+
+/* line 15, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.head_img img {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Raleway Bold"), local("Raleway-Bold"), url(../fonts/raleway-bold.woff2) format("woff2");
+}
+
+/* line 36, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+body {
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+
+/* line 42, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.nav_new .navbar-nav .active a,
+.nav_new .navbar-nav .active a:focus,
+.nav_new .navbar-nav .active a:hover {
+  color: #00B906;
+  background-color: transparent;
+}
+
+/* line 49, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.nav_new .navbar-nav li a {
+  color: #333;
+  font-size: 16px;
+  font-family: 'Raleway';
+  font-weight: 400;
+}
+
+/* line 56, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.nav_new .navbar-nav li a:hover {
+  color: #00B906;
+}
+
+/* line 59, D:/XAMPP/htdocs/Usable/scss/new1.scss */
+.nav_new .navbar-brand:hover {
+  color: #00B906;
+}
+
+/*# sourceMappingURL=../css/new1.map */
