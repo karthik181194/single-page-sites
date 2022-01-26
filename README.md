@@ -14,7 +14,7 @@
     <h1>Portfolio</h1>
 </div>
 
-![demo](./portfolio/img/expense.png)
+![demo](./portfolio/img/folio.png)
 
 <div align="center">
     <h1>Product</h1>
